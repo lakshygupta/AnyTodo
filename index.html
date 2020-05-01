@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>TODO Application</title>
+</head>
+<body onload="display()"> 
+    <div id="container">
+        <div class="controls">
+            <h1>My Todo List</h1>
+            <input type="text" id="input" placeholder="Enter your task here"><br>
+            <p id="main" style="color:brown; font-size: 1.2em;"></p>
+            <button id="add">Add Task</button>
+            <button id="remove">Remove Task</button>
+            <button id="clear">Clear All</button>
+        </div>
+        
+        <ul id="list"></ul>
+        <h2 id="pp"></h2>
+        <h2 style="color: rgb(77, 74, 73); font-size: 2em;"></h2>
+    </div>
+
+    <div class="footer">
+        <label>Created by Lakshy Gupta</label>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
