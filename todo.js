@@ -39,6 +39,11 @@ function display() {
   var clearButton = document.getElementById("clear");
   clearButton.addEventListener("click", clearAll);
 
+  document.querySelector('input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      addItem();
+    }
+});
   var lastkey;
   var count = flag + 1;
   function addItem() {
@@ -159,4 +164,8 @@ function clearAll() {
   var isEmpty = document.getElementById('pp').innerHTML === "";
   if(isEmpty)
     no();
+}
+
+function editItem() {
+
 }
